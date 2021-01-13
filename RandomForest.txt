@@ -1,0 +1,53 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     base_treinamento_new-weka.filters.unsupervised.attribute.Remove-R5-6,11-13
+Instances:    312078
+Attributes:   9
+               Destination Port
+               Flow Duration
+              Total Length of Fwd Packets
+               Total Length of Bwd Packets
+               Fwd Header Length
+               Bwd Header Length
+               Min Packet Length
+               Max Packet Length
+              Label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 149.76 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances      312054               99.9923 %
+Incorrectly Classified Instances        24                0.0077 %
+Kappa statistic                          0.997 
+Mean absolute error                      0.0001
+Root mean squared error                  0.0082
+Relative absolute error                  0.5049 %
+Root relative squared error              7.1712 %
+Total Number of Instances           312078     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,004    1,000      1,000    1,000      0,997    0,998     1,000     BENIGN
+                 0,996    0,000    0,998      0,996    0,997      0,997    0,998     0,997     DoS slowloris
+Weighted Avg.    1,000    0,004    1,000      1,000    1,000      0,997    0,998     1,000     
+
+=== Confusion Matrix ===
+
+      a      b   <-- classified as
+ 307969      8 |      a = BENIGN
+     16   4085 |      b = DoS slowloris
+
+

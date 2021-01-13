@@ -1,0 +1,129 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     base_treinamento_new-weka.filters.unsupervised.attribute.Remove-R5-6,11-13
+Instances:    312078
+Attributes:   9
+               Destination Port
+               Flow Duration
+              Total Length of Fwd Packets
+               Total Length of Bwd Packets
+               Fwd Header Length
+               Bwd Header Length
+               Min Packet Length
+               Max Packet Length
+              Label
+Test mode:    split 65.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -5.143050530107627
+    Node 2    11.48987778557607
+    Node 3    4.411481019612586
+    Node 4    14.110887436987289
+    Node 5    5.328111915961891
+    Node 6    1.8760991976079986
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    5.143050530107624
+    Node 2    -11.489877785576066
+    Node 3    -4.411481019612581
+    Node 4    -14.110887436987293
+    Node 5    -5.32811191596189
+    Node 6    -1.8760991976080015
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    43.16914554344997
+    Attrib  Destination Port    69.82822848230511
+    Attrib  Flow Duration    1.1944719817146048
+    Attrib Total Length of Fwd Packets    -17.50482223319368
+    Attrib  Total Length of Bwd Packets    -42.10931511410262
+    Attrib  Fwd Header Length    -41.318509775715164
+    Attrib  Bwd Header Length    -40.769686099716324
+    Attrib  Min Packet Length    43.39540164393622
+    Attrib  Max Packet Length    76.5854370441129
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    17.580965510224804
+    Attrib  Destination Port    7.0808302221619455
+    Attrib  Flow Duration    -46.494388611978536
+    Attrib Total Length of Fwd Packets    -14.249020037435123
+    Attrib  Total Length of Bwd Packets    -17.1189102293513
+    Attrib  Fwd Header Length    -16.968164468802865
+    Attrib  Bwd Header Length    -16.896849374934447
+    Attrib  Min Packet Length    23.822061110814065
+    Attrib  Max Packet Length    21.76536019214053
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    34.79185185388403
+    Attrib  Destination Port    112.10658186090814
+    Attrib  Flow Duration    -0.11444452589133884
+    Attrib Total Length of Fwd Packets    -34.014546741884445
+    Attrib  Total Length of Bwd Packets    -34.64080663716325
+    Attrib  Fwd Header Length    -34.75230089950362
+    Attrib  Bwd Header Length    -33.642427516116065
+    Attrib  Min Packet Length    89.13034600556192
+    Attrib  Max Packet Length    -26.789398302200706
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    8.566288921578108
+    Attrib  Destination Port    15.22844804192435
+    Attrib  Flow Duration    75.91472674996531
+    Attrib Total Length of Fwd Packets    1.1452294414740818
+    Attrib  Total Length of Bwd Packets    -1.4138121210853984
+    Attrib  Fwd Header Length    -0.7324157782953127
+    Attrib  Bwd Header Length    -0.6798984979447181
+    Attrib  Min Packet Length    27.116869970037534
+    Attrib  Max Packet Length    29.268148579056362
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    10.014580072597264
+    Attrib  Destination Port    8.179751778516103
+    Attrib  Flow Duration    -17.485504489530214
+    Attrib Total Length of Fwd Packets    -8.339235958257238
+    Attrib  Total Length of Bwd Packets    -9.692023576499352
+    Attrib  Fwd Header Length    -9.620695112817952
+    Attrib  Bwd Header Length    -9.527526407975206
+    Attrib  Min Packet Length    19.116261148632027
+    Attrib  Max Packet Length    17.94787118877621
+Class BENIGN
+    Input
+    Node 0
+Class DoS slowloris
+    Input
+    Node 1
+
+
+Time taken to build model: 210.09 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.5 seconds
+
+=== Summary ===
+
+Correctly Classified Instances      108417               99.2584 %
+Incorrectly Classified Instances       810                0.7416 %
+Kappa statistic                          0.6238
+Mean absolute error                      0.0117
+Root mean squared error                  0.0815
+Relative absolute error                 44.925  %
+Root relative squared error             70.8892 %
+Total Number of Instances           109227     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,535    0,993      1,000    0,996      0,666    0,984     1,000     BENIGN
+                 0,465    0,000    0,962      0,465    0,627      0,666    0,984     0,638     DoS slowloris
+Weighted Avg.    0,993    0,528    0,992      0,993    0,991      0,666    0,984     0,995     
+
+=== Confusion Matrix ===
+
+      a      b   <-- classified as
+ 107736     27 |      a = BENIGN
+    783    681 |      b = DoS slowloris
+
+

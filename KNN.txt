@@ -1,0 +1,54 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     base_treinamento_new-weka.filters.unsupervised.attribute.Remove-R5-6,11-13
+Instances:    312078
+Attributes:   9
+               Destination Port
+               Flow Duration
+              Total Length of Fwd Packets
+               Total Length of Bwd Packets
+               Fwd Header Length
+               Bwd Header Length
+               Min Packet Length
+               Max Packet Length
+              Label
+Test mode:    split 60.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.09 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 2573.8 seconds
+
+=== Summary ===
+
+Correctly Classified Instances      124774               99.9543 %
+Incorrectly Classified Instances        57                0.0457 %
+Kappa statistic                          0.9825
+Mean absolute error                      0.0005
+Root mean squared error                  0.0214
+Relative absolute error                  1.792  %
+Root relative squared error             18.7017 %
+Total Number of Instances           124831     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,019    1,000      1,000    1,000      0,983    0,992     1,000     BENIGN
+                 0,981    0,000    0,984      0,981    0,983      0,983    0,992     0,968     DoS slowloris
+Weighted Avg.    1,000    0,018    1,000      1,000    1,000      0,983    0,992     0,999     
+
+=== Confusion Matrix ===
+
+      a      b   <-- classified as
+ 123151     26 |      a = BENIGN
+     31   1623 |      b = DoS slowloris
+
+

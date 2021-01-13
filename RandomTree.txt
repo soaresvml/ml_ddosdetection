@@ -1,0 +1,210 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     base_treinamento_new-weka.filters.unsupervised.attribute.Remove-R5-6,11-13
+Instances:    312078
+Attributes:   9
+               Destination Port
+               Flow Duration
+              Total Length of Fwd Packets
+               Total Length of Bwd Packets
+               Fwd Header Length
+               Bwd Header Length
+               Min Packet Length
+               Max Packet Length
+              Label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+RandomTree
+==========
+
+ Min Packet Length < 3
+|    Bwd Header Length < 106
+|   |    Flow Duration < 76509708.5
+|   |   |    Destination Port < 84
+|   |   |   |   Total Length of Fwd Packets < 10
+|   |   |   |   |   Total Length of Fwd Packets < 7
+|   |   |   |   |   |    Bwd Header Length < 10
+|   |   |   |   |   |   |    Flow Duration < 2996830.5
+|   |   |   |   |   |   |   |    Flow Duration < 199745 : BENIGN (1244/0)
+|   |   |   |   |   |   |   |    Flow Duration >= 199745
+|   |   |   |   |   |   |   |   |   Total Length of Fwd Packets < 3
+|   |   |   |   |   |   |   |   |   |    Flow Duration < 200072 : DoS slowloris (2/0)
+|   |   |   |   |   |   |   |   |   |    Flow Duration >= 200072
+|   |   |   |   |   |   |   |   |   |   |    Flow Duration < 752499 : BENIGN (76/0)
+|   |   |   |   |   |   |   |   |   |   |    Flow Duration >= 752499
+|   |   |   |   |   |   |   |   |   |   |   |    Flow Duration < 1004160.5
+|   |   |   |   |   |   |   |   |   |   |   |   |    Flow Duration < 966998
+|   |   |   |   |   |   |   |   |   |   |   |   |   |    Destination Port < 40 : BENIGN (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |    Destination Port >= 40
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |    Fwd Header Length < 80
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |    Flow Duration < 800447 : DoS slowloris (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |    Flow Duration >= 800447 : BENIGN (5/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |    Fwd Header Length >= 80 : BENIGN (3/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |    Flow Duration >= 966998 : DoS slowloris (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |    Flow Duration >= 1004160.5 : BENIGN (14/0)
+|   |   |   |   |   |   |   |   |   Total Length of Fwd Packets >= 3 : BENIGN (1/0)
+|   |   |   |   |   |   |    Flow Duration >= 2996830.5
+|   |   |   |   |   |   |   |    Flow Duration < 3005425.5
+|   |   |   |   |   |   |   |   |    Flow Duration < 3001559
+|   |   |   |   |   |   |   |   |   |    Flow Duration < 3001555.5
+|   |   |   |   |   |   |   |   |   |   |    Fwd Header Length < 92 : BENIGN (3/0)
+|   |   |   |   |   |   |   |   |   |   |    Fwd Header Length >= 92 : DoS slowloris (256/0)
+|   |   |   |   |   |   |   |   |   |    Flow Duration >= 3001555.5 : BENIGN (1/0)
+|   |   |   |   |   |   |   |   |    Flow Duration >= 3001559 : DoS slowloris (937/0)
+|   |   |   |   |   |   |   |    Flow Duration >= 3005425.5
+|   |   |   |   |   |   |   |   |    Destination Port < 40 : BENIGN (18/0)
+|   |   |   |   |   |   |   |   |    Destination Port >= 40
+|   |   |   |   |   |   |   |   |   |    Fwd Header Length < 78
+|   |   |   |   |   |   |   |   |   |   |    Flow Duration < 12960025.5
+|   |   |   |   |   |   |   |   |   |   |   |    Flow Duration < 12384029.5
+|   |   |   |   |   |   |   |   |   |   |   |   |    Flow Duration < 3239885.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |    Flow Duration < 3205672.5 : BENIGN (4/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |    Flow Duration >= 3205672.5 : DoS slowloris (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |    Flow Duration >= 3239885.5 : BENIGN (13/0)
+|   |   |   |   |   |   |   |   |   |   |   |    Flow Duration >= 12384029.5 : DoS slowloris (1/0)
+|   |   |   |   |   |   |   |   |   |   |    Flow Duration >= 12960025.5 : BENIGN (45/0)
+|   |   |   |   |   |   |   |   |   |    Fwd Header Length >= 78 : BENIGN (44/0)
+|   |   |   |   |   |    Bwd Header Length >= 10
+|   |   |   |   |   |   |    Max Packet Length < 347.5
+|   |   |   |   |   |   |   |    Flow Duration < 5957789
+|   |   |   |   |   |   |   |   |    Flow Duration < 57.5
+|   |   |   |   |   |   |   |   |   |    Flow Duration < 56.5 : BENIGN (177/0)
+|   |   |   |   |   |   |   |   |   |    Flow Duration >= 56.5 : DoS slowloris (1/0)
+|   |   |   |   |   |   |   |   |    Flow Duration >= 57.5
+|   |   |   |   |   |   |   |   |   |    Fwd Header Length < 100 : BENIGN (3005/0)
+|   |   |   |   |   |   |   |   |   |    Fwd Header Length >= 100
+|   |   |   |   |   |   |   |   |   |   |    Flow Duration < 5012330
+|   |   |   |   |   |   |   |   |   |   |   |    Bwd Header Length < 60
+|   |   |   |   |   |   |   |   |   |   |   |   |    Flow Duration < 3583366 : BENIGN (7/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |    Flow Duration >= 3583366 : DoS slowloris (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |    Bwd Header Length >= 60 : BENIGN (3/0)
+|   |   |   |   |   |   |   |   |   |   |    Flow Duration >= 5012330 : BENIGN (2014/0)
+|   |   |   |   |   |   |   |    Flow Duration >= 5957789
+|   |   |   |   |   |   |   |   |    Bwd Header Length < 42
+|   |   |   |   |   |   |   |   |   |    Bwd Header Length < 38 : BENIGN (4/0)
+|   |   |   |   |   |   |   |   |   |    Bwd Header Length >= 38
+|   |   |   |   |   |   |   |   |   |   |    Fwd Header Length < 124
+|   |   |   |   |   |   |   |   |   |   |   |    Flow Duration < 5959014 : DoS slowloris (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |    Flow Duration >= 5959014 : BENIGN (198/0)
+|   |   |   |   |   |   |   |   |   |   |    Fwd Header Length >= 124
+|   |   |   |   |   |   |   |   |   |   |   |    Flow Duration < 6050816 : DoS slowloris (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |    Flow Duration >= 6050816 : BENIGN (13/0)
+|   |   |   |   |   |   |   |   |    Bwd Header Length >= 42 : BENIGN (425/0)
+|   |   |   |   |   |   |    Max Packet Length >= 347.5 : DoS slowloris (56/0)
+|   |   |   |   |   Total Length of Fwd Packets >= 7 : DoS slowloris (432/0)
+|   |   |   |   Total Length of Fwd Packets >= 10
+|   |   |   |   |    Flow Duration < 16478982.5
+|   |   |   |   |   |    Fwd Header Length < 134
+|   |   |   |   |   |   |    Flow Duration < 6198.5 : DoS slowloris (59/0)
+|   |   |   |   |   |   |    Flow Duration >= 6198.5
+|   |   |   |   |   |   |   |    Flow Duration < 5006599
+|   |   |   |   |   |   |   |   |    Flow Duration < 4989392 : BENIGN (2166/0)
+|   |   |   |   |   |   |   |   |    Flow Duration >= 4989392 : DoS slowloris (1/0)
+|   |   |   |   |   |   |   |    Flow Duration >= 5006599 : BENIGN (4754/0)
+|   |   |   |   |   |    Fwd Header Length >= 134
+|   |   |   |   |   |   |    Total Length of Bwd Packets < 58
+|   |   |   |   |   |   |   |    Max Packet Length < 269.5
+|   |   |   |   |   |   |   |   |   Total Length of Fwd Packets < 124.5 : BENIGN (7/0)
+|   |   |   |   |   |   |   |   |   Total Length of Fwd Packets >= 124.5 : DoS slowloris (120/0)
+|   |   |   |   |   |   |   |    Max Packet Length >= 269.5 : BENIGN (20/0)
+|   |   |   |   |   |   |    Total Length of Bwd Packets >= 58 : BENIGN (133/0)
+|   |   |   |   |    Flow Duration >= 16478982.5
+|   |   |   |   |   |    Fwd Header Length < 134 : BENIGN (83/0)
+|   |   |   |   |   |    Fwd Header Length >= 134
+|   |   |   |   |   |   |    Total Length of Bwd Packets < 58 : DoS slowloris (135/0)
+|   |   |   |   |   |   |    Total Length of Bwd Packets >= 58 : BENIGN (35/0)
+|   |   |    Destination Port >= 84 : BENIGN (37032/0)
+|   |    Flow Duration >= 76509708.5
+|   |   |    Bwd Header Length < 28 : BENIGN (206/0)
+|   |   |    Bwd Header Length >= 28
+|   |   |   |   Total Length of Fwd Packets < 1747
+|   |   |   |   |    Fwd Header Length < 78
+|   |   |   |   |   |   Total Length of Fwd Packets < 4 : BENIGN (4/0)
+|   |   |   |   |   |   Total Length of Fwd Packets >= 4 : DoS slowloris (769/0)
+|   |   |   |   |    Fwd Header Length >= 78
+|   |   |   |   |   |    Total Length of Bwd Packets < 2 : DoS slowloris (25/0)
+|   |   |   |   |   |    Total Length of Bwd Packets >= 2 : BENIGN (71/0)
+|   |   |   |   Total Length of Fwd Packets >= 1747 : DoS slowloris (1204/0)
+|    Bwd Header Length >= 106
+|   |    Max Packet Length < 231.5
+|   |   |    Max Packet Length < 230.5 : BENIGN (1861/0)
+|   |   |    Max Packet Length >= 230.5
+|   |   |   |    Flow Duration < 52762194.5 : BENIGN (2/0)
+|   |   |   |    Flow Duration >= 52762194.5 : DoS slowloris (88/0)
+|   |    Max Packet Length >= 231.5
+|   |   |    Flow Duration < 7271165.5
+|   |   |   |    Flow Duration < 7269801
+|   |   |   |   |    Destination Port < 84
+|   |   |   |   |   |    Flow Duration < 5014325 : BENIGN (2814/0)
+|   |   |   |   |   |    Flow Duration >= 5014325
+|   |   |   |   |   |   |    Flow Duration < 5037606 : DoS slowloris (1/0)
+|   |   |   |   |   |   |    Flow Duration >= 5037606
+|   |   |   |   |   |   |   |    Max Packet Length < 1051
+|   |   |   |   |   |   |   |   |    Total Length of Bwd Packets < 2499 : BENIGN (110/0)
+|   |   |   |   |   |   |   |   |    Total Length of Bwd Packets >= 2499
+|   |   |   |   |   |   |   |   |   |   Total Length of Fwd Packets < 2140.5
+|   |   |   |   |   |   |   |   |   |   |    Flow Duration < 5814434.5 : DoS slowloris (2/0)
+|   |   |   |   |   |   |   |   |   |   |    Flow Duration >= 5814434.5 : BENIGN (1/0)
+|   |   |   |   |   |   |   |   |   |   Total Length of Fwd Packets >= 2140.5 : BENIGN (2/0)
+|   |   |   |   |   |   |   |    Max Packet Length >= 1051 : BENIGN (266/0)
+|   |   |   |   |    Destination Port >= 84 : BENIGN (22526/0)
+|   |   |   |    Flow Duration >= 7269801 : DoS slowloris (1/0)
+|   |   |    Flow Duration >= 7271165.5 : BENIGN (36530/0)
+ Min Packet Length >= 3
+|    Min Packet Length < 12
+|   |    Flow Duration < 108.5 : BENIGN (25778/0)
+|   |    Flow Duration >= 108.5
+|   |   |    Destination Port < 84
+|   |   |   |    Flow Duration < 110.5
+|   |   |   |   |    Max Packet Length < 122.5 : BENIGN (39/0)
+|   |   |   |   |    Max Packet Length >= 122.5 : DoS slowloris (2/0)
+|   |   |   |    Flow Duration >= 110.5
+|   |   |   |   |    Flow Duration < 229.5
+|   |   |   |   |   |    Total Length of Bwd Packets < 3
+|   |   |   |   |   |   |   Total Length of Fwd Packets < 15
+|   |   |   |   |   |   |   |    Flow Duration < 213.5 : BENIGN (901/0)
+|   |   |   |   |   |   |   |    Flow Duration >= 213.5
+|   |   |   |   |   |   |   |   |    Flow Duration < 228.5
+|   |   |   |   |   |   |   |   |   |    Flow Duration < 215 : BENIGN (9/1)
+|   |   |   |   |   |   |   |   |   |    Flow Duration >= 215 : BENIGN (29/0)
+|   |   |   |   |   |   |   |   |    Flow Duration >= 228.5 : BENIGN (2/1)
+|   |   |   |   |   |   |   Total Length of Fwd Packets >= 15 : BENIGN (6/0)
+|   |   |   |   |   |    Total Length of Bwd Packets >= 3 : BENIGN (388/0)
+|   |   |   |   |    Flow Duration >= 229.5 : BENIGN (3465/0)
+|   |   |    Destination Port >= 84 : BENIGN (18995/0)
+|    Min Packet Length >= 12 : BENIGN (142426/0)
+
+Size of the tree : 157
+
+Time taken to build model: 2.33 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances      312042               99.9885 %
+Incorrectly Classified Instances        36                0.0115 %
+Kappa statistic                          0.9956
+Mean absolute error                      0.0001
+Root mean squared error                  0.0108
+Relative absolute error                  0.4564 %
+Root relative squared error              9.4483 %
+Total Number of Instances           312078     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,004    1,000      1,000    1,000      0,996    0,998     1,000     BENIGN
+                 0,996    0,000    0,995      0,996    0,996      0,996    0,998     0,991     DoS slowloris
+Weighted Avg.    1,000    0,004    1,000      1,000    1,000      0,996    0,998     1,000     
+
+=== Confusion Matrix ===
+
+      a      b   <-- classified as
+ 307957     20 |      a = BENIGN
+     16   4085 |      b = DoS slowloris
+
+

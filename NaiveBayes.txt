@@ -1,0 +1,103 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     base_treinamento_new-weka.filters.unsupervised.attribute.Remove-R5-6,11-13
+Instances:    312078
+Attributes:   9
+               Destination Port
+               Flow Duration
+              Total Length of Fwd Packets
+               Total Length of Bwd Packets
+               Fwd Header Length
+               Bwd Header Length
+               Min Packet Length
+               Max Packet Length
+              Label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                                       Class
+Attribute                             BENIGN DoS slowloris
+                                      (0.99)        (0.01)
+===========================================================
+ Destination Port
+  mean                              8921.3184       80.9731
+  std. dev.                        19010.5856        0.4217
+  weight sum                           307977          4101
+  precision                            2.5304        2.5304
+
+ Flow Duration
+  mean                          12093284.6112 55678954.6615
+  std. dev.                     31318884.7427 49564271.7304
+  weight sum                           307977          4101
+  precision                           824.884       824.884
+
+Total Length of Fwd Packets
+  mean                               688.9918      807.8707
+  std. dev.                         7747.8399     1141.6235
+  weight sum                           307977          4101
+  precision                          148.9091      148.9091
+
+ Total Length of Bwd Packets
+  mean                             22231.8887             0
+  std. dev.                       2853996.799     5532.3204
+  weight sum                           307977          4101
+  precision                        33193.9224    33193.9224
+
+ Fwd Header Length
+  mean                               169.6275             0
+  std. dev.                        19615.3057      485.1179
+  weight sum                           307977          4101
+  precision                         2910.7076     2910.7076
+
+ Bwd Header Length
+  mean                               217.3649             0
+  std. dev.                        24716.8553      567.0477
+  weight sum                           307977          4101
+  precision                         3402.2861     3402.2861
+
+ Min Packet Length
+  mean                                 21.891        0.0091
+  std. dev.                           31.0431         1.547
+  weight sum                           307977          4101
+  precision                            9.2821        9.2821
+
+ Max Packet Length
+  mean                               507.5124      106.2567
+  std. dev.                         1040.0543      165.0318
+  weight sum                           307977          4101
+  precision                            5.6276        5.6276
+
+
+
+Time taken to build model: 0.89 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances      285816               91.5848 %
+Incorrectly Classified Instances     26262                8.4152 %
+Kappa statistic                          0.2198
+Mean absolute error                      0.0842
+Root mean squared error                  0.2898
+Relative absolute error                324.477  %
+Root relative squared error            254.5113 %
+Total Number of Instances           312078     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,915    0,000    1,000      0,915    0,955      0,351    0,988     1,000     BENIGN
+                 1,000    0,085    0,135      1,000    0,238      0,351    0,988     0,573     DoS slowloris
+Weighted Avg.    0,916    0,002    0,989      0,916    0,946      0,351    0,988     0,994     
+
+=== Confusion Matrix ===
+
+      a      b   <-- classified as
+ 281717  26260 |      a = BENIGN
+      2   4099 |      b = DoS slowloris
+
+
