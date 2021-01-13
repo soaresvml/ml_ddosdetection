@@ -1,0 +1,98 @@
+=== Model information ===
+
+Filename:     randomforestFase5.model
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     base_treinamento_new-weka.filters.unsupervised.attribute.Remove-R5-6,11-13
+Attributes:   9
+               Destination Port
+               Flow Duration
+              Total Length of Fwd Packets
+               Total Length of Bwd Packets
+               Fwd Header Length
+               Bwd Header Length
+               Min Packet Length
+               Max Packet Length
+              Label
+
+=== Classifier model ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     base_teste_weka2
+Instances:     unknown (yet). Reading incrementally
+Attributes:   9
+
+=== Predictions on user test set ===
+
+    inst#     actual  predicted error prediction
+        1        1:?   1:BENIGN       0.987 
+        2        1:?   1:BENIGN       0.987 
+        3        1:?   1:BENIGN       0.987 
+        4        1:?   1:BENIGN       0.987 
+        5        1:?   1:BENIGN       0.987 
+        6        1:?   1:BENIGN       0.987 
+        7        1:?   1:BENIGN       0.987 
+        8        1:?   1:BENIGN       0.987 
+        9        1:?   1:BENIGN       0.987 
+       10        1:?   1:BENIGN       0.987 
+       11        1:?   1:BENIGN       0.987 
+       12        1:?   1:BENIGN       0.987 
+       13        1:?   1:BENIGN       0.987 
+       14        1:?   1:BENIGN       0.987 
+       15        1:?   1:BENIGN       0.987 
+       16        1:?   1:BENIGN       0.987 
+       17        1:?   1:BENIGN       0.987 
+       18        1:?   1:BENIGN       0.987 
+       19        1:?   1:BENIGN       0.987 
+       20        1:?   1:BENIGN       0.987 
+
+=== Summary ===
+
+Total Number of Instances                0     
+Ignored Class Unknown Instances                 20     
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     base_teste_weka2
+Instances:     unknown (yet). Reading incrementally
+Attributes:   9
+
+=== Predictions on user test set ===
+
+    inst#     actual  predicted error prediction
+        1        1:?   1:BENIGN       1 
+        2        1:?   1:BENIGN       1 
+        3        1:? 2:DoS slowloris       1 
+        4        1:?   1:BENIGN       1 
+        5        1:?   1:BENIGN       1 
+        6        1:?   1:BENIGN       1 
+        7        1:?   1:BENIGN       1 
+        8        1:?   1:BENIGN       1 
+        9        1:?   1:BENIGN       1 
+       10        1:?   1:BENIGN       1 
+       11        1:?   1:BENIGN       1 
+       12        1:?   1:BENIGN       1 
+       13        1:?   1:BENIGN       1 
+       14        1:?   1:BENIGN       1 
+       15        1:?   1:BENIGN       1 
+       16        1:?   1:BENIGN       1 
+       17        1:?   1:BENIGN       1 
+       18        1:?   1:BENIGN       1 
+       19        1:?   1:BENIGN       1 
+       20        1:?   1:BENIGN       1 
+
+=== Summary ===
+
+Total Number of Instances                0     
+Ignored Class Unknown Instances                 20     
+
+
