@@ -1,4 +1,4 @@
-# DDoS Attck Detection
+# DDoS Attack Detection
 ### Planejamento – Oficina Maker Preparação e Análise de Dados
 ### Grupo 23 – Pedro Henrique Coelho e Vinicius dos Santos Soares
 ## Objetivo do projeto
