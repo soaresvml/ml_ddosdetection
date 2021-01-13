@@ -1,5 +1,5 @@
-
-# Planejamento – Oficina Maker Preparação e Análise de Dados
+# DDoS Attck Detection
+### Planejamento – Oficina Maker Preparação e Análise de Dados
 ### Grupo 23 – Pedro Henrique Coelho e Vinicius dos Santos Soares
 ## Objetivo do projeto
 Propor, implementar e validar uma solução especificamente para tratar os ataques de rede do tipo DoS/DDoS.
@@ -11,15 +11,15 @@ Propor, implementar e validar uma solução especificamente para tratar os ataqu
     5. Geração de alertas
     6. Integração
 ### FASE 2 – Coleta de Dados
-Responsável: Pedro Henrique Coelho
-Apoio: Vinicius dos Santos Soares
-Objetivo: Carregar os arquivos PCAP para um ambiente Python.
-Tecnologias: Python 3.8, Anaconda.
-Biblioteca Python: DPKT ou outro.
-Data de entrega: 31/03
-Entrega: Arquivo PCAP carregado como dataset em um ambiente Python.
+Responsável: Pedro Henrique Coelho\n
+Apoio: Vinicius dos Santos Soares\n
+Objetivo: Carregar os arquivos PCAP para um ambiente Python.\n
+Tecnologias: Python 3.8, Anaconda.\n
+Biblioteca Python: DPKT ou outro.\n
+Data de entrega: 31/03\n
+Entrega: Arquivo PCAP carregado como dataset em um ambiente Python.\n
 ### FASE 3 – Preparação e Análise de Dados
-Responsável: Vinicius dos Santos Soares 
+Responsável: Vinicius dos Santos Soares\n
 Apoio: Pedro Henrique Coelho 
 Objetivo: Determinar os campos relevantes do dataset carregado e gerar bases de teste e treinamento para mineração de dados.
 Tecnologias: Jupyter Notebook.
